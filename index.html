@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TrendNxt</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/drag.js"></script>
+  </head>
+  <body>
+        <div class="sectleft">
+          <svg width="400px" height="200px" >
+            <circle cx="100" cy="100" r="50" fill="yellow" />
+            <circle cx="250" cy="100" r="50" fill="green" />
+          </svg>
+          <div class="next" ondrop="finish(event)" ondragover="accept(event)"> </div>
+          <div class="nxt" ondrop="finish(event)" ondragover="accept(event)"> </div>
+        </div><br><br><br><br>
+        <img id="first" src="Logo.gif" ondragstart="start(event)" draggable="true" width="100" height="60">
+        <div id="loc">
+        <button type="button" class="button" onclick="currentLocation()">Geolocation</button><br><br>
+        <span id="geo"> </span>
+      </div>
+  </body>
+</html>
